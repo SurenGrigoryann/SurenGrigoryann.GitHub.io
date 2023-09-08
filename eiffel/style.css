@@ -1,0 +1,45 @@
+html, body{
+    background-color: rgb(176, 140, 90) ;
+    text-align:center;
+}
+
+h1{
+    color:rgb(255, 255, 255);
+    text-align: middle;
+}
+
+
+
+h3{
+    color:rgb(255, 255, 255);
+    text-align: middle;
+}
+
+#page
+{
+
+max-width:800px;
+margin: 20px auto;
+background-color: #bfa475;
+
+}
+
+#info{
+    background-color: #bfa475; 
+}
+
+#left-column{
+    max-width:660px;
+    margin: 20px auto;
+    background-color: #cdbfa9;
+    text-align: left;
+    padding: 5px;
+}
+
+#right-column{
+    max-width:660px;
+    margin: 20px auto;
+    background-color: #cdbfa9;
+    text-align: right;
+    padding: 5px;
+}
