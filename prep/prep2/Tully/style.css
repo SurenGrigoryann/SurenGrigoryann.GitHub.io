@@ -1,0 +1,33 @@
+#page{
+    background-color: #ffc78e;
+    margin: 60px;
+    padding: 60px;
+}
+
+h1{
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: #ffb62d;
+    margin-bottom: 0px;
+}
+
+h4{
+    text-align: left;
+    color : rgb(254, 102, 7);
+    font-style: inherit;
+  
+}
+
+h3{
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+
+p{
+    text-align: left;
+    font-style:normal;
+    color: rgb(200, 0, 255);
+}
