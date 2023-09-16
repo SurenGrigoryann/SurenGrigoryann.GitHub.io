@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title> Quick Quiz page</title>
+    <style>
+
+    </style>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    <h1>Chess Quiz</h1>
+    <div>
+        <h4>1.How many players can play chess?</h4>
+        <p>2 players<input type="radio" id="question1" name="players" value="two"></p>
+        <p>3 players<input type="radio" id="question1" name="players" value="three"></p>
+        <p>4 players<input type="radio" id="question1" name="players" value="four"></p>
+        <p id = 'answer1'></p>
+    </div>
+    <div>
+        <h4>2.How many world chess champions are there?</h4>
+        <p> Answer:<input id = 'question2' type:="text"></p>
+        <p id = 'answer2'></p>
+        </div>
+    <div>
+        <h4>3.Who was the first World chess champion</h4>
+        <p>Bobby Fischer<input type="radio" id="question3" name="champion" value="fischer"></p>
+        <p>Garry Kasparov<input type="radio" id="question3" name="champion" value="kasparov"></p>
+        <p>Wilhelm Steinitz<input type="radio" id="question3" name="champion" value="steinitz"></p>
+        <p>Ding Liren<input type="radio" id="question3" name="champion" value="ding"></p>
+        <p id = 'answer3'></p>
+    </div>
+    <div>
+        <h4>4.Who is the current world chess champion?</h4>
+        <p> Answer:<input id = 'question4' type:="text" name = ''></p>      
+        <p id = 'answer4'></p>
+    </div>
+    <div>
+        <h4>5.How many pieces there are?</h4>
+        <select>
+            <option id = 'question5' value = 'a'>8 pieces</option>
+            <option id = 'question5' value = 'b'>16 pieces</option>
+            <option id = 'question5' value = 'c'>64 pieces</option>
+            <option id = 'question5' value = 'daaa'>32 pieces</option>
+        </select>
+        <p id = 'answer5'></p>
+        <p id = 'ok'></p>
+    </div>
+    <script>
+        function questions(){
+            var answer1 = document.getElementById("question1").value;
+            var answer2 = document.getElementById("question2").value;
+            var answer3 = document.getElementById("question3").value;
+            var answer4 = document.getElementById("question4").value;
+            var answer5 = document.getElementById("question5").value;
+            // question  1
+            if (answer1 == 'two')
+                document.getElementById("answer1").innerHTML = 'That is right! Chess can play only 2 people!';
+            else
+                document.getElementById("answer1").innerHTML = 'That is not right! Chess can play only 2 people!';
+            // end if
+
+            //question 2
+            if (answer2 == '17' || answer2 == 'seventeen')
+                document.getElementById("answer2").innerHTML = 'That is right! There are only 17 world chess champions.';
+            else
+                document.getElementById("answer2").innerHTML = 'No! There are only 17 world chess champions.';
+            // end if
+            
+            //question 3
+            if (answer3 == 'steinitz')
+                document.getElementById("answer3").innerHTML = 'That is correct! Wilhelm Steinitz was the first world chess champion!';
+            else if(answer3 == 'kasparov')
+                document.getElementById("answer3").innerHTML = 'Garry Kasparov was 13th World chess champion! Wilhelm Steinitz was the first world chess champion!';       
+            else if (answer3 == 'fischer')
+                document.getElementById('answer3').innerHTML = 'Bobby Fishcher was 11th World chess champion! Wilhelm Steinitz was the first world chess champion!';
+            else 
+                document.getElementById('answer3').innerHTML = 'Ding Liren is the current World chess champion! Wilhelm Steinitz was the first world chess champion!';
+            // end if
+
+            //question 4
+            if (answer4 == 'Ding Liren') 
+                document.getElementById('answer4').innerHTML = 'You are Right!';
+            else
+                document.getElementById('answer4').innerHTML = 'No! Current world chess champion is Ding Liren!';
+            
+            if (answer5 == 'daaa')
+                document.getElementById('answer5').innerHTML = 'That is correct!';
+            else
+                document.getElementById('answer5').innerHTML = 'Nope! Only 32 pieces!';
+            // end if
+        }   
+
+    </script>
+    <br>
+        <button type="button" onclick = 'questions()'>Finish</button>
+    </body>
+</html>
