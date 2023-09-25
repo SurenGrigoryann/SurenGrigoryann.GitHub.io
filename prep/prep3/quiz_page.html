@@ -62,7 +62,7 @@
         </select>
         <p id = 'answer5'></p>
     </div>
-
+    <p id = 'score></p>
     <script>
         function questions(){
             var score = 0;
@@ -110,7 +110,7 @@
                 score = score + 1;
             else
                 document.getElementById('answer4').innerHTML = 'No! Current world chess champion is Ding Liren!';
-            return score
+            document.getElementById('score').innerHTML = score
         }   
 
     </script>
